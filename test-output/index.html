@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\user\eclipse-workspace\vtiger-crm\groupExecution.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="contactModule.ContactModuleTest" class="method navigator-link" hash-for-method="CreateContactWithOrganizationTest({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, O...)">CreateContactWithOrganizationTest({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, O...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="contactModule.ContactModuleTest" class="method navigator-link" hash-for-method="CreateContactWithSupportDatesTest({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_STA...)">CreateContactWithSupportDatesTest({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_STA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="organizationModule.OrganizationModuleTest" class="method navigator-link" hash-for-method="CreateOrgWithIndustryAndTypeTest({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org Wit...)">CreateOrgWithIndustryAndTypeTest({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org Wit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="organizationModule.OrganizationModuleTest" class="method navigator-link" hash-for-method="CreateOrgWithPhoneNumberTest({STATUS=Pass, TC_DESC=Create Org With Phone no, TC_ID=TC_03, PHNO=2783383839, SNO=3.0, ORG_NAME=Marv...)">CreateOrgWithPhoneNumberTest({STATUS=Pass, TC_DESC=Create Org With Phone no, TC_ID=TC_03, PHNO=2783383839, SNO=3.0, ORG_NAME=Marv...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="organizationModule.OrganizationModuleTest" class="method navigator-link" hash-for-method="CreateTest({=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra})">CreateTest({=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="contactModule.ContactModuleTest" class="method navigator-link" hash-for-method="createTest({CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0})">createTest({CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">contactModule.ContactModuleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateContactWithOrganizationTest({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, O...)">
+                  </a> <!-- CreateContactWithOrganizationTest({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, O...) -->
+                  <span class="method-name">CreateContactWithOrganizationTest</span>
+                  <span class="parameters">({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, ORG_NAME=Marvel})</span>
+                  <em>
+(Create a Contact With Organization)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateContactWithSupportDatesTest({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_STA...)">
+                  </a> <!-- CreateContactWithSupportDatesTest({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_STA...) -->
+                  <span class="method-name">CreateContactWithSupportDatesTest</span>
+                  <span class="parameters">({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_START_DATE=4/28/26, TC_DESC=Create a Contact With Support Dates, SLNO=3.0})</span>
+                  <em>
+(Create a Contact With Support Dates)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createTest({CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0})">
+                  </a> <!-- createTest({CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0}) -->
+                  <span class="method-name">createTest</span>
+                  <span class="parameters">({CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0})</span>
+                  <em>
+(Create Contact)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">organizationModule.OrganizationModuleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateOrgWithIndustryAndTypeTest({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org Wit...)">
+                  </a> <!-- CreateOrgWithIndustryAndTypeTest({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org Wit...) -->
+                  <span class="method-name">CreateOrgWithIndustryAndTypeTest</span>
+                  <span class="parameters">({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org With Industry and Type, TYPE=Competitor})</span>
+                  <em>
+(Create Org With Industry and Type)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateOrgWithPhoneNumberTest({STATUS=Pass, TC_DESC=Create Org With Phone no, TC_ID=TC_03, PHNO=2783383839, SNO=3.0, ORG_NAME=Marv...)">
+                  </a> <!-- CreateOrgWithPhoneNumberTest({STATUS=Pass, TC_DESC=Create Org With Phone no, TC_ID=TC_03, PHNO=2783383839, SNO=3.0, ORG_NAME=Marv...) -->
+                  <span class="method-name">CreateOrgWithPhoneNumberTest</span>
+                  <span class="parameters">({STATUS=Pass, TC_DESC=Create Org With Phone no, TC_ID=TC_03, PHNO=2783383839, SNO=3.0, ORG_NAME=Marvel})</span>
+                  <em>
+(Create Org With Phone no)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateTest({=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra})">
+                  </a> <!-- CreateTest({=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra}) -->
+                  <span class="method-name">CreateTest</span>
+                  <span class="parameters">({=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra})</span>
+                  <em>
+(Create Org)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\user\eclipse-workspace\vtiger-crm\groupExecution.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;organization&quot;/&gt;
+      &lt;include name=&quot;contact&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;organization&quot;/&gt;
+      &lt;include name=&quot;contact&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;organizationModule.OrganizationModuleTest&quot;/&gt;
+      &lt;class name=&quot;contactModule.ContactModuleTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Master</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateContactWithOrganizationTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateContactWithSupportDatesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateOrgWithIndustryAndTypeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateOrgWithPhoneNumberTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">contact</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateContactWithOrganizationTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateContactWithSupportDatesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">organization</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateOrgWithIndustryAndTypeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateOrgWithPhoneNumberTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CreateTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CreateContactWithOrganizationTest')
+data.setCell(0, 2, 'contactModule.ContactModuleTest')
+data.setCell(0, 3, 31422);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CreateContactWithSupportDatesTest')
+data.setCell(1, 2, 'contactModule.ContactModuleTest')
+data.setCell(1, 3, 28504);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CreateOrgWithPhoneNumberTest')
+data.setCell(2, 2, 'organizationModule.OrganizationModuleTest')
+data.setCell(2, 3, 21827);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CreateTest')
+data.setCell(3, 2, 'organizationModule.OrganizationModuleTest')
+data.setCell(3, 3, 21626);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createTest')
+data.setCell(4, 2, 'contactModule.ContactModuleTest')
+data.setCell(4, 3, 21534);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CreateOrgWithIndustryAndTypeTest')
+data.setCell(5, 2, 'organizationModule.OrganizationModuleTest')
+data.setCell(5, 3, 21445);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateContactWithOrganizationTest({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, O...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed Create Contact with org</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createTest({CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed with Create Contact</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateOrgWithIndustryAndTypeTest({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org Wit...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed Crate Org with industry and it's type</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateOrgWithPhoneNumberTest({STATUS=Pass, TC_DESC=Create Org With Phone no, TC_ID=TC_03, PHNO=2783383839, SNO=3.0, ORG_NAME=Marv...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed Crate Org with phone number</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateContactWithSupportDatesTest({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_STA...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed Create Contact with support dates</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateTest({=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed Create Org</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizationModule.OrganizationModuleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">3312 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateOrgWithIndustryAndTypeTest({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org Wit...)</span>
+                <span class="method-start">9643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">31111 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">33429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateOrgWithPhoneNumberTest({STATUS=Pass, TC_DESC=Create Org With Phone no, TC_ID=TC_03, PHNO=2783383839, SNO=3.0, ORG_NAME=Marv...)</span>
+                <span class="method-start">37814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">59649 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">61942 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateTest({=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra})</span>
+                <span class="method-start">66606 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">88242 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">90652 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">contactModule.ContactModuleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">90953 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">91968 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateContactWithOrganizationTest({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, O...)</span>
+                <span class="method-start">93251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">124686 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">127123 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateContactWithSupportDatesTest({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_STA...)</span>
+                <span class="method-start">131585 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">160098 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Login</span>
+                <span class="method-start">162604 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createTest({CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0})</span>
+                <span class="method-start">167474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Logout</span>
+                <span class="method-start">189010 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">191468 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

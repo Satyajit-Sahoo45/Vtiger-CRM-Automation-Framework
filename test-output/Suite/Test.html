@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 11 11:11:37 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>191 seconds (191735 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>organization contact </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='contactModule.ContactModuleTest.CreateContactWithOrganizationTest()'><b>CreateContactWithOrganizationTest</b><br>Test class: contactModule.ContactModuleTest<br>Test method: Create a Contact With Organization<br>Parameters: {CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, ORG_NAME=Marvel}<br/>
+<a href="#Output-971936990" onClick='toggleBox("Output-971936990", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-971936990" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-971936990">
+Completed Create Contact with org<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>contactModule.ContactModuleTest@24aed80c</td></tr>
+<tr>
+<td title='contactModule.ContactModuleTest.createTest()'><b>createTest</b><br>Test class: contactModule.ContactModuleTest<br>Test method: Create Contact<br>Parameters: {CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0}<br/>
+<a href="#Output-1234757451" onClick='toggleBox("Output-1234757451", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1234757451" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1234757451">
+Completed with Create Contact<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>contactModule.ContactModuleTest@24aed80c</td></tr>
+<tr>
+<td title='organizationModule.OrganizationModuleTest.CreateOrgWithIndustryAndTypeTest()'><b>CreateOrgWithIndustryAndTypeTest</b><br>Test class: organizationModule.OrganizationModuleTest<br>Test method: Create Org With Industry and Type<br>Parameters: {=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org With Industry and Type, TYPE=Competitor}<br/>
+<a href="#Output-690287064" onClick='toggleBox("Output-690287064", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-690287064" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-690287064">
+Completed Crate Org with industry and it's type<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>organizationModule.OrganizationModuleTest@fbd1f6</td></tr>
+<tr>
+<td title='organizationModule.OrganizationModuleTest.CreateOrgWithPhoneNumberTest()'><b>CreateOrgWithPhoneNumberTest</b><br>Test class: organizationModule.OrganizationModuleTest<br>Test method: Create Org With Phone no<br>Parameters: {STATUS=Pass, TC_DESC=Create Org With Phone no, TC_ID=TC_03, PHNO=2783383839, SNO=3.0, ORG_NAME=Marvel}<br/>
+<a href="#Output-1763750076" onClick='toggleBox("Output-1763750076", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1763750076" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1763750076">
+Completed Crate Org with phone number<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>organizationModule.OrganizationModuleTest@fbd1f6</td></tr>
+<tr>
+<td title='contactModule.ContactModuleTest.CreateContactWithSupportDatesTest()'><b>CreateContactWithSupportDatesTest</b><br>Test class: contactModule.ContactModuleTest<br>Test method: Create a Contact With Support Dates<br>Parameters: {CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_START_DATE=4/28/26, TC_DESC=Create a Contact With Support Dates, SLNO=3.0}<br/>
+<a href="#Output-400593724" onClick='toggleBox("Output-400593724", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-400593724" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-400593724">
+Completed Create Contact with support dates<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>contactModule.ContactModuleTest@24aed80c</td></tr>
+<tr>
+<td title='organizationModule.OrganizationModuleTest.CreateTest()'><b>CreateTest</b><br>Test class: organizationModule.OrganizationModuleTest<br>Test method: Create Org<br>Parameters: {=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra}<br/>
+<a href="#Output-1046467249" onClick='toggleBox("Output-1046467249", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1046467249" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1046467249">
+Completed Create Org<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>organizationModule.OrganizationModuleTest@fbd1f6</td></tr>
+</table><p>
+</body>
+</html>
