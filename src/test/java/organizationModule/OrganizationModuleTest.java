@@ -13,13 +13,11 @@ import com.aventstack.extentreports.Status;
 import base.BaseClass;
 import dataProviders.OrgDataProvider;
 import pomPages.HomePomPage;
-import pomPages.LoginPomPage;
 import pomPages.OrganizationCreatePomPage;
 import pomPages.OrganizationCreatedListPomPage;
 import pomPages.OrganizationPomPage;
 import utils.ExcelFileUtil;
 import utils.JavaUtility;
-import utils.PropertyFileUtil;
 import utils.UtilityObjectClass;
 import utils.WebDriverUtilities;
 
@@ -32,8 +30,6 @@ public class OrganizationModuleTest extends BaseClass {
 	public void CreateTest(Map<String, String> data) throws IOException, InterruptedException {
 		
 		JavaUtility ju = new JavaUtility();
-
-		System.out.println("Hi");
 		
 		String orgName = data.get("ORG_NAME") + ju.fetchRandomInteger();
 		
