@@ -32,6 +32,8 @@ public class OrganizationModuleTest extends BaseClass {
 	public void CreateTest(Map<String, String> data) throws IOException, InterruptedException {
 		
 		JavaUtility ju = new JavaUtility();
+
+		System.out.println("Hi");
 		
 		String orgName = data.get("ORG_NAME") + ju.fetchRandomInteger();
 		
