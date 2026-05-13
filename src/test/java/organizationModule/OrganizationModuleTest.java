@@ -54,6 +54,7 @@ public class OrganizationModuleTest extends BaseClass {
 		OrganizationCreatePomPage ocp = new OrganizationCreatePomPage(driver);
 
 		Assert.assertEquals(ocp.getCreateOrgPageHeading(), "Creating New Organization");
+		UtilityObjectClass.getTest().log(Status.INFO, "Validating Create New Organization Page");
 		
 //		pass input to Organization Name
 		ocp.getOrgNameTextField(orgName);
