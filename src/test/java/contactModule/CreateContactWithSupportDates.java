@@ -35,7 +35,7 @@ public class CreateContactWithSupportDates extends BaseClass {
 		String orgName = data.get("ORG_NAME");
 		String contactName = data.get("CONTACT_NAME");
 		
-		HomePomPage hpp = new HomePomPage(driver);
+		HomePomPage hpp = new HomePomPage(getDriver());
 		
 		Assert.assertEquals(hpp.getHomePageHeading(), "Home", "Home page not validated!");
 		
@@ -43,12 +43,12 @@ public class CreateContactWithSupportDates extends BaseClass {
 		hpp.getContactTab();
 		
 //		identify the "Contact" tab and click on it
-		ContactPomPage cpp = new ContactPomPage(driver);
+		ContactPomPage cpp = new ContactPomPage(getDriver());
 		
 //		create new contact
 		cpp.getCreateContactBtn();
 		
-		ContactCreatePomPage ccpp = new ContactCreatePomPage(driver);
+		ContactCreatePomPage ccpp = new ContactCreatePomPage(getDriver());
 		
 		Assert.assertEquals(ccpp.getCreateContactPageHeading(), "Creating New Contact", "New Contact Page not validated!");
 		
@@ -58,26 +58,26 @@ public class CreateContactWithSupportDates extends BaseClass {
 //		click on organization button
 		ccpp.getAddOrgNameBtn();
 		
-		ChildWindowPomPage cwpp = new ChildWindowPomPage(driver);
+		ChildWindowPomPage cwpp = new ChildWindowPomPage(getDriver());
 		
 //		fetch the parent window id
-		String parentWinId = wutil.Fetchwindowid(driver);
+		String parentWinId = wutil.Fetchwindowid(getDriver());
 		
 //		fetch all the windows
-		Set<String> allWinIds = wutil.FetchAllwindowid(driver);
+		Set<String> allWinIds = wutil.FetchAllwindowid(getDriver());
 		
 		Thread.sleep(3000);
 		
-		wutil.SwitchChildwindow_URL(driver, "module=Accounts&action=Popup");
+		wutil.SwitchChildwindow_URL(getDriver(), "module=Accounts&action=Popup");
 		
 		cwpp.searchOrgName(orgName);
 		
 		Thread.sleep(3000);
 		
-		driver.findElement(By.xpath("//a[text()='"+orgName+"']")).click();
+		getDriver().findElement(By.xpath("//a[text()='"+orgName+"']")).click();
 		
-//		switch back the driver controller to the parent window
-		wutil.SwitchToParentWindow(driver, parentWinId);		
+//		switch back the getDriver() controller to the parent window
+		wutil.SwitchToParentWindow(getDriver(), parentWinId);		
 		
 //		identify support start date TextField and pass the value 
 		String startDate = jutil.fetchCurrentDate();

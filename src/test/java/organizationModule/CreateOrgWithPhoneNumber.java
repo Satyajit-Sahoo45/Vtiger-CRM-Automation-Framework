@@ -33,18 +33,18 @@ public class CreateOrgWithPhoneNumber extends BaseClass {
 		String orgName = data.get("ORG_NAME") + ju.fetchRandomInteger();
 		String phno = data.get("PHNO");
 		
-		HomePomPage hpp = new HomePomPage(driver);
+		HomePomPage hpp = new HomePomPage(getDriver());
 
 		Assert.assertEquals(hpp.getHomePageHeading(), "Home");		
 		
 //		identify the "Organization" tab and click on it
-		OrganizationPomPage opp = new OrganizationPomPage(driver);
+		OrganizationPomPage opp = new OrganizationPomPage(getDriver());
 		hpp.getOrganizationTab();
 		
 //		create new organization
 		opp.getCreateOrgBtn();
 		
-		OrganizationCreatePomPage ocp = new OrganizationCreatePomPage(driver);
+		OrganizationCreatePomPage ocp = new OrganizationCreatePomPage(getDriver());
 
 		Assert.assertEquals(ocp.getCreateOrgPageHeading(), "Creating New Organization");
 		
@@ -58,7 +58,7 @@ public class CreateOrgWithPhoneNumber extends BaseClass {
 //		click on save button
 		ocp.getSaveBtn();
 		
-		OrganizationCreatedListPomPage ocl = new OrganizationCreatedListPomPage(driver);
+		OrganizationCreatedListPomPage ocl = new OrganizationCreatedListPomPage(getDriver());
 
 		Assert.assertEquals(true,ocl.getOrgInfoHeader().contains(orgName));
 		

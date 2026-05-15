@@ -17,6 +17,7 @@ import pomPages.HomePomPage;
 import pomPages.LoginPomPage;
 import utils.ExcelFileUtil;
 import utils.PropertyFileUtil;
+import utils.UtilityObjectClass;
 
 public class CreateContactTest extends BaseClass {
 	
@@ -37,22 +38,22 @@ public class CreateContactTest extends BaseClass {
 //		String orgName = data.get("ORG_NAME");
 		String contactName = data.get("CONTACT_NAME");
 		
-		HomePomPage hpp = new HomePomPage(driver);
+		HomePomPage hpp = new HomePomPage(getDriver());
 		
 		//verify home page
-		listeners.TestListener.test.log(Status.INFO, "Verifyting Home Page");
+		UtilityObjectClass.getTest().log(Status.INFO, "Verifyting Home Page");
 		Assert.assertEquals(hpp.getHomePageHeading(), "Home");
 		
 //		navigate to contact page
 		hpp.getContactTab();
 		
 //		identify the "Contact" tab and click on it
-		ContactPomPage cpp = new ContactPomPage(driver);
+		ContactPomPage cpp = new ContactPomPage(getDriver());
 		
 //		create new contact
 		cpp.getCreateContactBtn();
 		
-		ContactCreatePomPage ccpp = new ContactCreatePomPage(driver);
+		ContactCreatePomPage ccpp = new ContactCreatePomPage(getDriver());
 		
 		Assert.assertEquals(ccpp.getCreateContactPageHeading(), "Creating New Contact");
 		
@@ -78,7 +79,7 @@ public class CreateContactTest extends BaseClass {
 		    throw e;
 		}
 		
-//		ContactCreatedListPomPage cclp = new ContactCreatedListPomPage(driver); 
+//		ContactCreatedListPomPage cclp = new ContactCreatedListPomPage(getDriver()); 
 		
 //		click on delete button
 //		cclp.clickDelete();
@@ -86,7 +87,7 @@ public class CreateContactTest extends BaseClass {
 //		Thread.sleep(3000);
 //		
 ////		handle popup
-//		driver.switchTo().alert().accept();
+//		getDriver().switchTo().alert().accept();
 		
 
 	}
