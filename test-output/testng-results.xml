@@ -5,6 +5,12 @@
       <![CDATA[Suite Execution Started-Adv report configuration]]>
     </line>
     <line>
+      <![CDATA[Connected with DB]]>
+    </line>
+    <line>
+      <![CDATA[Configured the parallel Exe]]>
+    </line>
+    <line>
       <![CDATA[Launching the browser]]>
     </line>
     <line>
@@ -29,41 +35,55 @@
       <![CDATA[Completed with Create Contact]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-05-11T11:11:37 IST" name="Suite" finished-at="2026-05-11T11:14:49 IST" duration-ms="191735">
+  <suite started-at="2026-05-14T11:05:11 IST" name="Suite" finished-at="2026-05-14T11:08:15 IST" duration-ms="183841">
     <groups>
       <group name="Master">
-        <method signature="ContactModuleTest.CreateContactWithOrganizationTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" name="CreateContactWithOrganizationTest" class="contactModule.ContactModuleTest"/>
-        <method signature="ContactModuleTest.CreateContactWithSupportDatesTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" name="CreateContactWithSupportDatesTest" class="contactModule.ContactModuleTest"/>
-        <method signature="ContactModuleTest.createTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" name="createTest" class="contactModule.ContactModuleTest"/>
-        <method signature="OrganizationModuleTest.CreateOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" name="CreateOrgWithIndustryAndTypeTest" class="organizationModule.OrganizationModuleTest"/>
-        <method signature="OrganizationModuleTest.CreateOrgWithPhoneNumberTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" name="CreateOrgWithPhoneNumberTest" class="organizationModule.OrganizationModuleTest"/>
-        <method signature="OrganizationModuleTest.CreateTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" name="CreateTest" class="organizationModule.OrganizationModuleTest"/>
+        <method signature="ContactModuleTest.CreateContactWithOrganizationTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@49438269]" name="CreateContactWithOrganizationTest" class="contactModule.ContactModuleTest"/>
+        <method signature="ContactModuleTest.CreateContactWithSupportDatesTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@49438269]" name="CreateContactWithSupportDatesTest" class="contactModule.ContactModuleTest"/>
+        <method signature="ContactModuleTest.createTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@49438269]" name="createTest" class="contactModule.ContactModuleTest"/>
+        <method signature="OrganizationModuleTest.CreateOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" name="CreateOrgWithIndustryAndTypeTest" class="organizationModule.OrganizationModuleTest"/>
+        <method signature="OrganizationModuleTest.CreateOrgWithPhoneNumberTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" name="CreateOrgWithPhoneNumberTest" class="organizationModule.OrganizationModuleTest"/>
+        <method signature="OrganizationModuleTest.CreateTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" name="CreateTest" class="organizationModule.OrganizationModuleTest"/>
       </group> <!-- Master -->
       <group name="organization">
-        <method signature="OrganizationModuleTest.CreateOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" name="CreateOrgWithIndustryAndTypeTest" class="organizationModule.OrganizationModuleTest"/>
-        <method signature="OrganizationModuleTest.CreateOrgWithPhoneNumberTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" name="CreateOrgWithPhoneNumberTest" class="organizationModule.OrganizationModuleTest"/>
-        <method signature="OrganizationModuleTest.CreateTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" name="CreateTest" class="organizationModule.OrganizationModuleTest"/>
+        <method signature="OrganizationModuleTest.CreateOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" name="CreateOrgWithIndustryAndTypeTest" class="organizationModule.OrganizationModuleTest"/>
+        <method signature="OrganizationModuleTest.CreateOrgWithPhoneNumberTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" name="CreateOrgWithPhoneNumberTest" class="organizationModule.OrganizationModuleTest"/>
+        <method signature="OrganizationModuleTest.CreateTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" name="CreateTest" class="organizationModule.OrganizationModuleTest"/>
       </group> <!-- organization -->
       <group name="contact">
-        <method signature="ContactModuleTest.CreateContactWithOrganizationTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" name="CreateContactWithOrganizationTest" class="contactModule.ContactModuleTest"/>
-        <method signature="ContactModuleTest.CreateContactWithSupportDatesTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" name="CreateContactWithSupportDatesTest" class="contactModule.ContactModuleTest"/>
-        <method signature="ContactModuleTest.createTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" name="createTest" class="contactModule.ContactModuleTest"/>
+        <method signature="ContactModuleTest.CreateContactWithOrganizationTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@49438269]" name="CreateContactWithOrganizationTest" class="contactModule.ContactModuleTest"/>
+        <method signature="ContactModuleTest.CreateContactWithSupportDatesTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@49438269]" name="CreateContactWithSupportDatesTest" class="contactModule.ContactModuleTest"/>
+        <method signature="ContactModuleTest.createTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@49438269]" name="createTest" class="contactModule.ContactModuleTest"/>
       </group> <!-- contact -->
     </groups>
-    <test started-at="2026-05-11T11:11:37 IST" name="Test" finished-at="2026-05-11T11:14:49 IST" duration-ms="191735">
+    <test started-at="2026-05-14T11:05:11 IST" name="Test" finished-at="2026-05-14T11:08:15 IST" duration-ms="183841">
       <class name="organizationModule.OrganizationModuleTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:11:37 IST" name="setUp" finished-at="2026-05-11T11:11:39 IST" duration-ms="1589" status="PASS">
+        <test-method is-config="true" signature="connectDB()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:05:10 IST" name="connectDB" finished-at="2026-05-14T11:05:11 IST" duration-ms="844" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Connected with DB]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connectDB -->
+        <test-method is-config="true" signature="configParallelExe()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:05:11 IST" name="configParallelExe" finished-at="2026-05-14T11:05:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Configured the parallel Exe]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configParallelExe -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:05:11 IST" name="setUp" finished-at="2026-05-14T11:05:12 IST" duration-ms="1342" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launching the browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:11:41 IST" name="Login" finished-at="2026-05-11T11:11:47 IST" duration-ms="6329" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:05:14 IST" name="Login" finished-at="2026-05-14T11:05:19 IST" duration-ms="4891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CreateOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:11:47 IST" name="CreateOrgWithIndustryAndTypeTest" description="Create Org With Industry and Type" data-provider="organizationDataProvider" finished-at="2026-05-11T11:12:08 IST" duration-ms="21445" status="PASS">
+        <test-method signature="CreateOrgWithIndustryAndTypeTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:05:19 IST" name="CreateOrgWithIndustryAndTypeTest" description="Create Org With Industry and Type" data-provider="organizationDataProvider" finished-at="2026-05-14T11:05:39 IST" duration-ms="19937" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,15 +97,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- CreateOrgWithIndustryAndTypeTest -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:12:08 IST" name="Logout" finished-at="2026-05-11T11:12:11 IST" duration-ms="2201" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:05:39 IST" name="Logout" finished-at="2026-05-14T11:05:41 IST" duration-ms="2244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:12:11 IST" name="Login" finished-at="2026-05-11T11:12:15 IST" duration-ms="4385" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:05:41 IST" name="Login" finished-at="2026-05-14T11:05:45 IST" duration-ms="4307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CreateOrgWithPhoneNumberTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:12:15 IST" name="CreateOrgWithPhoneNumberTest" description="Create Org With Phone no" data-provider="organizationDataProvider" finished-at="2026-05-11T11:12:37 IST" duration-ms="21827" status="PASS">
+        <test-method signature="CreateOrgWithPhoneNumberTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:05:45 IST" name="CreateOrgWithPhoneNumberTest" description="Create Org With Phone no" data-provider="organizationDataProvider" finished-at="2026-05-14T11:06:08 IST" duration-ms="22232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,15 +119,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- CreateOrgWithPhoneNumberTest -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:12:37 IST" name="Logout" finished-at="2026-05-11T11:12:39 IST" duration-ms="2205" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:06:08 IST" name="Logout" finished-at="2026-05-14T11:06:10 IST" duration-ms="2191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:12:39 IST" name="Login" finished-at="2026-05-11T11:12:44 IST" duration-ms="4664" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:06:10 IST" name="Login" finished-at="2026-05-14T11:06:15 IST" duration-ms="4687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CreateTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:12:44 IST" name="CreateTest" description="Create Org" data-provider="organizationDataProvider" finished-at="2026-05-11T11:13:06 IST" duration-ms="21626" status="PASS">
+        <test-method signature="CreateTest(java.util.Map)[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:06:15 IST" name="CreateTest" description="Create Org" data-provider="organizationDataProvider" finished-at="2026-05-14T11:06:35 IST" duration-ms="20175" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,28 +141,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- CreateTest -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:13:06 IST" name="Logout" finished-at="2026-05-11T11:13:08 IST" duration-ms="2408" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:06:35 IST" name="Logout" finished-at="2026-05-14T11:06:37 IST" duration-ms="2437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:organizationModule.OrganizationModuleTest@fbd1f6]" started-at="2026-05-11T11:13:08 IST" name="quitBrowser" finished-at="2026-05-11T11:13:08 IST" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:06:37 IST" name="quitBrowser" finished-at="2026-05-14T11:06:37 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="disconnectDB()[pri:0, instance:organizationModule.OrganizationModuleTest@26794848]" started-at="2026-05-14T11:08:15 IST" name="disconnectDB" finished-at="2026-05-14T11:08:15 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disconnectDB -->
       </class> <!-- organizationModule.OrganizationModuleTest -->
       <class name="contactModule.ContactModuleTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:13:08 IST" name="setUp" finished-at="2026-05-11T11:13:09 IST" duration-ms="966" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:06:37 IST" name="setUp" finished-at="2026-05-14T11:06:38 IST" duration-ms="857" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launching the browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:13:09 IST" name="Login" finished-at="2026-05-11T11:13:11 IST" duration-ms="1283" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:06:38 IST" name="Login" finished-at="2026-05-14T11:06:39 IST" duration-ms="1104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CreateContactWithOrganizationTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:13:11 IST" name="CreateContactWithOrganizationTest" description="Create a Contact With Organization" data-provider="contactDataProvider" finished-at="2026-05-11T11:13:42 IST" duration-ms="31422" status="PASS">
+        <test-method signature="CreateContactWithOrganizationTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:06:39 IST" name="CreateContactWithOrganizationTest" description="Create a Contact With Organization" data-provider="contactDataProvider" finished-at="2026-05-14T11:07:10 IST" duration-ms="30652" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,15 +180,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- CreateContactWithOrganizationTest -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:13:42 IST" name="Logout" finished-at="2026-05-11T11:13:44 IST" duration-ms="2335" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:07:10 IST" name="Logout" finished-at="2026-05-14T11:07:12 IST" duration-ms="2262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:13:44 IST" name="Login" finished-at="2026-05-11T11:13:49 IST" duration-ms="4462" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:07:12 IST" name="Login" finished-at="2026-05-14T11:07:17 IST" duration-ms="4513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="CreateContactWithSupportDatesTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:13:49 IST" name="CreateContactWithSupportDatesTest" description="Create a Contact With Support Dates" data-provider="contactDataProvider" finished-at="2026-05-11T11:14:17 IST" duration-ms="28504" status="PASS">
+        <test-method signature="CreateContactWithSupportDatesTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:07:17 IST" name="CreateContactWithSupportDatesTest" description="Create a Contact With Support Dates" data-provider="contactDataProvider" finished-at="2026-05-14T11:07:46 IST" duration-ms="28663" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,15 +202,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- CreateContactWithSupportDatesTest -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:14:17 IST" name="Logout" finished-at="2026-05-11T11:14:20 IST" duration-ms="2443" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:07:46 IST" name="Logout" finished-at="2026-05-14T11:07:48 IST" duration-ms="2124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:14:20 IST" name="Login" finished-at="2026-05-11T11:14:25 IST" duration-ms="4869" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:07:48 IST" name="Login" finished-at="2026-05-14T11:07:52 IST" duration-ms="4543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="createTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:14:25 IST" name="createTest" description="Create Contact" data-provider="contactDataProvider" finished-at="2026-05-11T11:14:46 IST" duration-ms="21534" status="PASS">
+        <test-method signature="createTest(java.util.Map)[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:07:52 IST" name="createTest" description="Create Contact" data-provider="contactDataProvider" finished-at="2026-05-14T11:08:12 IST" duration-ms="20237" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,11 +224,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:14:46 IST" name="Logout" finished-at="2026-05-11T11:14:49 IST" duration-ms="2458" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:08:13 IST" name="Logout" finished-at="2026-05-14T11:08:15 IST" duration-ms="2021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:contactModule.ContactModuleTest@24aed80c]" started-at="2026-05-11T11:14:49 IST" name="quitBrowser" finished-at="2026-05-11T11:14:49 IST" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:contactModule.ContactModuleTest@49438269]" started-at="2026-05-14T11:08:15 IST" name="quitBrowser" finished-at="2026-05-14T11:08:15 IST" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

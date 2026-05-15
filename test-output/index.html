@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\user\eclipse-workspace\vtiger-crm\groupExecution.xml</span>
+                    <span>C:\Users\user\eclipse-workspace\vtiger-crm\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -222,25 +222,13 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user\eclipse-workspace\vtiger-crm\groupExecution.xml</span>
+            <span class="header-content">C:\Users\user\eclipse-workspace\vtiger-crm\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;organization&quot;/&gt;
-      &lt;include name=&quot;contact&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;organization&quot;/&gt;
-      &lt;include name=&quot;contact&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
   &lt;/listeners&gt;
@@ -351,27 +339,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CreateContactWithOrganizationTest')
 data.setCell(0, 2, 'contactModule.ContactModuleTest')
-data.setCell(0, 3, 31422);
+data.setCell(0, 3, 30652);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'CreateContactWithSupportDatesTest')
 data.setCell(1, 2, 'contactModule.ContactModuleTest')
-data.setCell(1, 3, 28504);
+data.setCell(1, 3, 28663);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'CreateOrgWithPhoneNumberTest')
 data.setCell(2, 2, 'organizationModule.OrganizationModuleTest')
-data.setCell(2, 3, 21827);
+data.setCell(2, 3, 22232);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CreateTest')
-data.setCell(3, 2, 'organizationModule.OrganizationModuleTest')
-data.setCell(3, 3, 21626);
+data.setCell(3, 1, 'createTest')
+data.setCell(3, 2, 'contactModule.ContactModuleTest')
+data.setCell(3, 3, 20237);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'createTest')
-data.setCell(4, 2, 'contactModule.ContactModuleTest')
-data.setCell(4, 3, 21534);
+data.setCell(4, 1, 'CreateTest')
+data.setCell(4, 2, 'organizationModule.OrganizationModuleTest')
+data.setCell(4, 3, 20175);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'CreateOrgWithIndustryAndTypeTest')
 data.setCell(5, 2, 'organizationModule.OrganizationModuleTest')
-data.setCell(5, 3, 21445);
+data.setCell(5, 3, 19937);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -388,21 +376,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">CreateContactWithOrganizationTest({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, O...)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Completed Create Contact with org</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">createTest({CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0})</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Completed with Create Contact</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">CreateOrgWithIndustryAndTypeTest({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org Wit...)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Completed Crate Org with industry and it's type</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -412,24 +388,47 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">CreateContactWithSupportDatesTest({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_STA...)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Completed Create Contact with support dates</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">CreateTest({=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra})</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Completed Create Org</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateContactWithOrganizationTest({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, O...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed Create Contact with org</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateOrgWithIndustryAndTypeTest({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org Wit...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed Crate Org with industry and it's type</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CreateContactWithSupportDatesTest({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_STA...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Completed Create Contact with support dates</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">contactModule.ContactModuleTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">connectDB</span>
+                <br/>
+                <span class="ignored-method-name">configParallelExe</span>
+                <br/>
+                <span class="ignored-method-name">disconnectDB</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -439,97 +438,112 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">organizationModule.OrganizationModuleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">connectDB</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">configParallelExe</span>
+                <span class="method-start">852 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">879 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">3312 ms</span>
+                <span class="method-start">3668 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreateOrgWithIndustryAndTypeTest({=, STATUS=Pass, TC_ID=TC_02, INDUSTRY=Construction, SNO=2.0, ORG_NAME=Hello, TC_DESC=Create Org Wit...)</span>
-                <span class="method-start">9643 ms</span>
+                <span class="method-start">8559 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">31111 ms</span>
+                <span class="method-start">28511 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">33429 ms</span>
+                <span class="method-start">30864 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreateOrgWithPhoneNumberTest({STATUS=Pass, TC_DESC=Create Org With Phone no, TC_ID=TC_03, PHNO=2783383839, SNO=3.0, ORG_NAME=Marv...)</span>
-                <span class="method-start">37814 ms</span>
+                <span class="method-start">35171 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">59649 ms</span>
+                <span class="method-start">57412 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">61942 ms</span>
+                <span class="method-start">59680 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreateTest({=, STATUS=Pass, TC_DESC=Create Org, TC_ID=TC_01, SNO=1.0, ORG_NAME=Astra})</span>
-                <span class="method-start">66606 ms</span>
+                <span class="method-start">64368 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">88242 ms</span>
+                <span class="method-start">84547 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">90652 ms</span>
+                <span class="method-start">86985 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">contactModule.ContactModuleTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">90953 ms</span>
+                <span class="method-start">87228 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">91968 ms</span>
+                <span class="method-start">88130 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreateContactWithOrganizationTest({CONTACT_NAME=Ram, STATUS=Pass, TC_DESC=Create a Contact With Organization, TC_ID=TC_03, SLNO=2.0, O...)</span>
-                <span class="method-start">93251 ms</span>
+                <span class="method-start">89234 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">124686 ms</span>
+                <span class="method-start">119896 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">127123 ms</span>
+                <span class="method-start">122238 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreateContactWithSupportDatesTest({CONTACT_NAME=Sahoo, STATUS=Pass, TC_ID=TC_03, ORG_NAME=Hello, SUPPORT_END _DATE=5/1/26, SUPPORT_STA...)</span>
-                <span class="method-start">131585 ms</span>
+                <span class="method-start">126751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">160098 ms</span>
+                <span class="method-start">155417 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Login</span>
-                <span class="method-start">162604 ms</span>
+                <span class="method-start">157570 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createTest({CONTACT_NAME=Tom, STATUS=Pass, TC_DESC=Create Contact, TC_ID=TC_01, SLNO=1.0})</span>
-                <span class="method-start">167474 ms</span>
+                <span class="method-start">162113 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">189010 ms</span>
+                <span class="method-start">182366 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">191468 ms</span>
+                <span class="method-start">184388 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizationModule.OrganizationModuleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">disconnectDB</span>
+                <span class="method-start">184767 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
