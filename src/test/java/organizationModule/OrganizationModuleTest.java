@@ -33,14 +33,14 @@ public class OrganizationModuleTest extends BaseClass {
 		
 		String orgName = data.get("ORG_NAME") + ju.fetchRandomInteger();
 		
-		HomePomPage hpp = new HomePomPage(driver);
+		HomePomPage hpp = new HomePomPage(getDriver());
 		
 		UtilityObjectClass.getTest().log(Status.INFO, "Verifyting Home Page Of Organization");
 		Assert.assertEquals(hpp.getHomePageHeading(), "Home");
 		
 		
 //		identify the "Organization" tab and click on it
-		OrganizationPomPage opp = new OrganizationPomPage(driver);
+		OrganizationPomPage opp = new OrganizationPomPage(getDriver());
 //		hpp.clickOnOrganizationTab();
 		UtilityObjectClass.getTest().log(Status.INFO, "Identify Organization tab and click on it");
 		hpp.getOrganizationTab();
@@ -49,7 +49,7 @@ public class OrganizationModuleTest extends BaseClass {
 		UtilityObjectClass.getTest().log(Status.INFO, "Identify Plus icon to create a new Organization and click on it");
 		opp.getCreateOrgBtn();
 		
-		OrganizationCreatePomPage ocp = new OrganizationCreatePomPage(driver);
+		OrganizationCreatePomPage ocp = new OrganizationCreatePomPage(getDriver());
 
 		Assert.assertEquals(ocp.getCreateOrgPageHeading(), "Creating New Organization");
 		UtilityObjectClass.getTest().log(Status.INFO, "Validating Create New Organization Page");
@@ -62,7 +62,7 @@ public class OrganizationModuleTest extends BaseClass {
 		
 		Thread.sleep(5000);
 		
-		OrganizationCreatedListPomPage ocl = new OrganizationCreatedListPomPage(driver);
+		OrganizationCreatedListPomPage ocl = new OrganizationCreatedListPomPage(getDriver());
 		
 		Assert.assertEquals(true, ocl.getOrgInfoHeader().contains(orgName));
 		
@@ -88,7 +88,7 @@ public class OrganizationModuleTest extends BaseClass {
 //		Thread.sleep(3000);
 		
 //		handle popup
-//		driver.switchTo().alert().accept();	
+//		getDriver().switchTo().alert().accept();	
 		
 		
 	}
@@ -107,12 +107,12 @@ public class OrganizationModuleTest extends BaseClass {
 		String orgName = data.get("ORG_NAME") + ju.fetchRandomInteger();
 		
 		UtilityObjectClass.getTest().log(Status.INFO, "Verifyting Home Page dor Org with Industry and type");
-		HomePomPage hpp = new HomePomPage(driver);
+		HomePomPage hpp = new HomePomPage(getDriver());
 		
 		Assert.assertEquals(hpp.getHomePageHeading(), "Home");
 		
 //		identify the "Organization" tab and click on it
-		OrganizationPomPage opp = new OrganizationPomPage(driver);
+		OrganizationPomPage opp = new OrganizationPomPage(getDriver());
 //		hpp.clickOnOrganizationTab();
 		UtilityObjectClass.getTest().log(Status.INFO, "Identify Organization tab and click on it");
 		hpp.getOrganizationTab();
@@ -121,7 +121,7 @@ public class OrganizationModuleTest extends BaseClass {
 //		create new organization
 		opp.getCreateOrgBtn();
 		
-		OrganizationCreatePomPage ocp = new OrganizationCreatePomPage(driver);
+		OrganizationCreatePomPage ocp = new OrganizationCreatePomPage(getDriver());
 		
 		Assert.assertEquals(ocp.getCreateOrgPageHeading(), "Creating New Organization");
 		
@@ -144,7 +144,7 @@ public class OrganizationModuleTest extends BaseClass {
 //		click on save button
 		ocp.getSaveBtn();
 		
-		OrganizationCreatedListPomPage ocl = new OrganizationCreatedListPomPage(driver);
+		OrganizationCreatedListPomPage ocl = new OrganizationCreatedListPomPage(getDriver());
 
 		Assert.assertEquals(true, ocl.getOrgInfoHeader().contains(orgName));
 		
@@ -179,14 +179,14 @@ public class OrganizationModuleTest extends BaseClass {
 		String orgName = data.get("ORG_NAME") + ju.fetchRandomInteger();
 		String phno = data.get("PHNO");
 		
-		HomePomPage hpp = new HomePomPage(driver);
+		HomePomPage hpp = new HomePomPage(getDriver());
 
 		UtilityObjectClass.getTest().log(Status.INFO, "Verifyting Home Page for Org with phone number");
 		
 		Assert.assertEquals(hpp.getHomePageHeading(), "Home");		
 		
 //		identify the "Organization" tab and click on it
-		OrganizationPomPage opp = new OrganizationPomPage(driver);
+		OrganizationPomPage opp = new OrganizationPomPage(getDriver());
 		UtilityObjectClass.getTest().log(Status.INFO, "Identify Organization tab and click on it");
 		hpp.getOrganizationTab();
 		
@@ -194,7 +194,7 @@ public class OrganizationModuleTest extends BaseClass {
 		UtilityObjectClass.getTest().log(Status.INFO, "Identify Plus icon to create a new Organization and click on it");
 		opp.getCreateOrgBtn();
 		
-		OrganizationCreatePomPage ocp = new OrganizationCreatePomPage(driver);
+		OrganizationCreatePomPage ocp = new OrganizationCreatePomPage(getDriver());
 
 		Assert.assertEquals(ocp.getCreateOrgPageHeading(), "Creating New Organization");
 		
@@ -208,7 +208,7 @@ public class OrganizationModuleTest extends BaseClass {
 //		click on save button
 		ocp.getSaveBtn();
 		
-		OrganizationCreatedListPomPage ocl = new OrganizationCreatedListPomPage(driver);
+		OrganizationCreatedListPomPage ocl = new OrganizationCreatedListPomPage(getDriver());
 
 		Assert.assertEquals(true,ocl.getOrgInfoHeader().contains(orgName));
 		
