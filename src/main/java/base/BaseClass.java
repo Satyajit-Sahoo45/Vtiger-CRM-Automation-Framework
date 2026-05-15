@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -23,7 +24,7 @@ import utils.WebDriverUtilities;
 
 public class BaseClass {
 	
-	public WebDriver driver;
+	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<>();
 	PropertyFileUtil pfu = new PropertyFileUtil();
 	DatabaseUtility dbutil;
 	WebDriverUtilities wutil = new WebDriverUtilities();
@@ -41,17 +42,19 @@ public class BaseClass {
 	}
 	
 	@BeforeClass(alwaysRun = true)
-//	@Parameters("browser")
-	public void setUp() throws IOException {
-		String browserName = pfu.getPropertyValue("browser");
+	@Parameters("browser")
+	public void setUp(String browserName) throws IOException {
+//		String browserName = pfu.getPropertyValue("browser");
 		Reporter.log("Launching the browser");
 		
 		if(browserName.equals("chrome")) {
-			driver = new ChromeDriver();
+			tdriver.set(new ChromeDriver());
 		} else if(browserName.equals("edge")) {
-			driver = new EdgeDriver();
+			tdriver.set(new EdgeDriver());
+		}else if(browserName.equals("firefox")) {
+			tdriver.set(new FirefoxDriver());
 		} else {
-			driver = new ChromeDriver();
+			tdriver.set(new ChromeDriver());
 		}
 		
 	}
@@ -65,24 +68,25 @@ public class BaseClass {
 		String url = pfu.getPropertyValue("url");
 		
 //		maximize the window
-		wutil.Maximize_Browser(driver);
-		wutil.WaitForElement_implictly(driver, timeouts);
-		wutil.NavigateToApplication(driver, url);
+		wutil.Maximize_Browser(getDriver());
+		wutil.WaitForElement_implictly(getDriver(), timeouts);
+		wutil.NavigateToApplication(getDriver(), url);
 		
-		LoginPomPage login = new LoginPomPage(driver);
+		LoginPomPage login = new LoginPomPage(getDriver());
 		login.Login(username, password);
 	}
 	
 	@AfterMethod(alwaysRun = true)
 	public void Logout() {
-		HomePomPage hp = new HomePomPage(driver);
-		hp.logout(driver);
+		HomePomPage hp = new HomePomPage(getDriver());
+		hp.logout(getDriver());
 	}
 	
 	@AfterClass(alwaysRun = true)
 	public void quitBrowser() {
-		if(driver != null) {
-			driver.quit();
+		if(getDriver() != null) {
+			getDriver().quit();
+			tdriver.remove();
 		}
 	}
 	
@@ -92,7 +96,7 @@ public class BaseClass {
 	}
 	
 	public WebDriver getDriver() {
-	    return driver;
+	    return tdriver.get();
 	}
 	
 }
