@@ -1,9 +1,0 @@
-/target/
-
-# Eclipse
-.project
-.classpath
-.settings/
-.metadata/
-
-/extentReports/
