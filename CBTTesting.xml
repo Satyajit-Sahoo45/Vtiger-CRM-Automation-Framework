@@ -11,7 +11,7 @@
     </classes>
   </test> <!-- Test -->
   <test name="Test-edge">
-  	<parameter name="browser" value="chrome"></parameter>
+  	<parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="contactModule.ContactModuleTest"/>
     </classes>
