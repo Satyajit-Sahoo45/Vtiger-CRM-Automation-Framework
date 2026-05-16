@@ -1,5 +1,8 @@
 package listeners;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -22,13 +25,14 @@ import utils.UtilityObjectClass;
 
 public class TestListener implements ISuiteListener, ITestListener{
 	public ExtentReports report;
+	String repName;
 	
 	@Override
 	public void onStart(ISuite suite) {
 		Reporter.log("Suite Execution Started-Adv report configuration", true);
 		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-		String repName = "Test-Report-" + timeStamp + ".html";
+		repName = "Test-Report-" + timeStamp + ".html";
 		
 //		Configure the Report
 		ExtentSparkReporter spark = new ExtentSparkReporter("./extentReports/"+repName);
@@ -85,8 +89,17 @@ public class TestListener implements ISuiteListener, ITestListener{
 	
 	@Override
 	public void onFinish(ISuite suite) {
-//		UtilityObjectClass.getTest().log(Status.INFO, "Suite Execution Ended-Adv report configuration");
 		report.flush();
+		
+		String pathOfExtentReport = System.getProperty("user.dir")+"\\extentReports\\"+repName;
+		File extentReport = new File(pathOfExtentReport);
+		
+		try {
+			Desktop.getDesktop().browse(extentReport.toURI());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 		UtilityObjectClass.test.remove();
 	}
 
